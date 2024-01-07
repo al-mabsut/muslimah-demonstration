@@ -1,0 +1,33 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "linebreak-style":"off"
+  },
+  "plugins": [
+    "jsx-a11y"
+  ],
+  "extends": [
+    "plugin:jsx-a11y/recommended",
+    "eslint:recommended",
+    "preact",
+    "google"
+  ],
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "rules": {
+        "max-len": "off"
+      }
+    }
+  ]
+}
